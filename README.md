@@ -13,3 +13,7 @@ DriveAssist is a minimalistic app running on the drivers mobiles, which are plac
 * Based on Tensorflow JS to detect warnings/ road/ vehicles
 * Mobile sensors to detect driving speed
 * Doesn't depend on internet connection
+
+# Contribute
+* Great projects are built with great minds. Contribute and help drivers drive better!
+* This is a public project. You can add your pieces, submit a pull-request and I will gladly approve.
