@@ -9,7 +9,7 @@ Drivers - young, color-blind & aged, may have difficulty in assessing the road a
 DriveAssist is a minimalistic app running on the drivers mobiles, which are placed on their dashboard with their camera facing the road. 
 
 # The how
-A JavaScript based application that can run from a browser or as a standalone application
-Based on Tensorflow JS to detect warnings/ road/ vehicles
-Mobile sensors to detect driving speed
-Doesn't depend on internet connection
+* A JavaScript based application that can run from a browser or as a standalone application
+* Based on Tensorflow JS to detect warnings/ road/ vehicles
+* Mobile sensors to detect driving speed
+* Doesn't depend on internet connection
