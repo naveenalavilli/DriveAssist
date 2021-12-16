@@ -6,6 +6,9 @@ Works only on mobile/device browsers with a rear camera.
 <br/>MyDrivingAssistant on Firebase.
 <br/>https://mydrivingassistant.web.app
 
+# Status
+* App detects objects on the camera live video capture
+
 # The why
 Drivers - young, color-blind & aged, may have difficulty in assessing the road and face troubles driving. DriveAssist is an attempt to be an extra eye & mind to warn the drivers to stay put.
 
