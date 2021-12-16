@@ -1,7 +1,8 @@
 # DriveAssist
 Make your car smarter with your mobile! Detect: Over-speeding | Sign Boards | Lane shits | traffic-ahead
 
-# Build - running, only on mobile/device browsers with a rear camera
+# Build
+Works only on mobile/device browsers with a rear camera.
 MyDrivingAssistant on Firebase. [https://mydrivingassistant.web.app]
 
 # The why
