@@ -3,7 +3,7 @@ Make your car smarter with your mobile! Detect: Over-speeding | Sign Boards | La
 
 # Build
 Works only on mobile/device browsers with a rear camera.
-<br/>MyDrivingAssistant on Firebase.
+<br/>MyDrivingAssistant running on
 <br/>https://mydrivingassistant.web.app
 
 # Status
