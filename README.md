@@ -3,7 +3,8 @@ Make your car smarter with your mobile! Detect: Over-speeding | Sign Boards | La
 
 # Build
 Works only on mobile/device browsers with a rear camera.
-MyDrivingAssistant on Firebase. [https://mydrivingassistant.web.app]
+<br/>MyDrivingAssistant on Firebase.
+<br/>https://mydrivingassistant.web.app
 
 # The why
 Drivers - young, color-blind & aged, may have difficulty in assessing the road and face troubles driving. DriveAssist is an attempt to be an extra eye & mind to warn the drivers to stay put.
