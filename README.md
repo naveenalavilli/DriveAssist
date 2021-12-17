@@ -1,5 +1,5 @@
 # DriveAssist
-Make your drive smarter with your mobile! Detect: Over-speeding | Sign Boards | Lane shits | traffic-ahead
+Make your drive smarter with your mobile! Detect: Over-speeding | Sign Boards | Lane shifts | traffic-ahead
 
 # Build
 Works only on mobile/device browsers with a rear camera.
