@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Drive Assist</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Jason Mayes">
 
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
-  </head>  
-  <body>
-    <h1>Drive Assist..</h1>
-    
+<head>
+  <title>Drive Assist</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Naveen Alavilli">
 
-    <p id="loading">Please wait a min for the Artificial Intelligence to kick in..</p>
-    
-    <section id="demos" class="invisible">
-      
-      <div id="liveView" class="videoView">
-        <button id="webcamButton">Enable Webcam</button>
-        <video id="webcam" autoplay></video>
-      </div>
-    </section>
-    
-    
-    <!-- Import TensorFlow.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js" type="text/javascript"></script>
-    
-    <!-- Load the coco-ssd model to use to recognize things in images -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
-    
-    <!-- Import the page's JavaScript to do some stuff -->
-    <script src="script.js" defer></script>
-  </body>
+  <!-- Import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Drive Assist..</h1>
+
+
+  <p id="loading">
+    Please give it a moment for the Artificial Intelligence modules to activate.
+  </p>
+
+  <section id="demos" class="invisible">
+
+    <div id="liveView" class="videoView">
+      <button id="webcamButton">Enable Webcam</button>
+      <video id="webcam" autoplay></video>
+    </div>
+  </section>
+
+
+  <!-- Import TensorFlow.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js" type="text/javascript"></script>
+
+  <!-- Load the coco-ssd model to use to recognize things in images -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+  <!-- Import the page's JavaScript to do some stuff -->
+  <script src="script.js" defer></script>
+</body>
+
 </html>
