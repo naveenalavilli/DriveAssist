@@ -41,41 +41,46 @@ function enableCam() {
 }
 
 function predictWebcam() {
-    model.detect(video).then((predictions) => {
-        // Clear previous highlights
-        children.forEach((child) => liveView.removeChild(child));
-        children = [];
+    // Start classifying the stream.
+    model.detect(video).then(function (predictions) {
+        // Remove previous highlights
+        for (let i = 0; i < children.length; i++) {
+            liveView.removeChild(children[i]);
+        }
+        children.splice(0);
 
-        predictions.forEach((prediction) => {
-            if (prediction.score > 0.5) {
-                displayPrediction(prediction);
-            }
+        // Filter predictions to those identified as "traffic light" or similar for demo purposes
+        const signboardPredictions = predictions.filter(prediction => prediction.class === 'traffic light' || prediction.class === 'stop sign');
+
+        // Display filtered predictions
+        signboardPredictions.forEach(function (prediction) {
+            displayPrediction(prediction);
         });
 
+        // Call this function again to keep predicting when the browser is ready.
         window.requestAnimationFrame(predictWebcam);
     });
 }
 
+
+
 function displayPrediction(prediction) {
-    // Create the container for the prediction text
+    // Custom styling for signboard predictions
     const p = document.createElement('p');
-    p.innerText = prediction.class + ' - ' + Math.round(prediction.score * 100) + '%';
+    p.innerText = `${prediction.class} detected - ${Math.round(prediction.score * 100)}% confidence`;
+    const textTop = prediction.bbox[1] + prediction.bbox[3];
+    p.style = `left: ${prediction.bbox[0]}px; top: ${textTop}px; color: yellow; background-color: black;`;
 
-    // Calculate position for the text. It positions the text just below the highlighted area.
-    const textTop = prediction.bbox[1] + prediction.bbox[3]; // Top position of the bounding box + height of the box
-    p.style = `left: ${prediction.bbox[0]}px; top: ${textTop}px;`;
-
-    // Create and style the highlighter box
     const highlighter = document.createElement('div');
     highlighter.setAttribute('class', 'highlighter');
-    highlighter.style = `left: ${prediction.bbox[0]}px; top: ${prediction.bbox[1]}px; width: ${prediction.bbox[2]}px; height: ${prediction.bbox[3]}px;`;
+    highlighter.style = `left: ${prediction.bbox[0]}px; top: ${prediction.bbox[1]}px; width: ${prediction.bbox[2]}px; height: ${prediction.bbox[3]}px; border-color: yellow;`;
 
     liveView.appendChild(highlighter);
     liveView.appendChild(p);
 
-    // Keep track of created elements for later removal
     children.push(highlighter, p);
 }
+
 
 function displayPrediction(prediction) {
     // Assume we have a function that estimates distance based on prediction attributes
