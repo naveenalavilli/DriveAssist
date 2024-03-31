@@ -16,20 +16,17 @@ h2 {
 em {
   font-weight: bold;
 }
-/* 
+
 video {
   clear: both;
   display: block;
-} */
-
-video {
-  width: 100%;
-  /* Adjust the width to 100% of its parent container */
-  height: auto;
-  /* Adjust the height automatically to maintain the aspect ratio */
-  object-fit: contain;
-  /* Ensure the video's aspect ratio is preserved and it is fully visible within its container */
 }
+
+/* video {
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+} */
 
 
 section {
