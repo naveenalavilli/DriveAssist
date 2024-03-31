@@ -28,6 +28,7 @@ const liveView = document.getElementById('liveView');
 
 // Check if webcam access is supported.
 function hasGetUserMedia() {
+    console.log('navigator.mediaDevices:', navigator.mediaDevices);
     return !!(navigator.mediaDevices &&
         navigator.mediaDevices.getUserMedia);
 }
